@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rabbit Apps</title>
+  <style>
+    :root { color-scheme: light dark; --text: #111113; --sub: #60646c; --line: #e0e1e6; --bg: #ffffff; --accent: #e5484d; }
+    @media (prefers-color-scheme: dark) { :root { --text: #f0f0f3; --sub: #b0b4ba; --line: #2e3135; --bg: #111113; } }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.7 -apple-system, system-ui, "Apple SD Gothic Neo", sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+    h1 { font-size: 26px; line-height: 1.3; margin: 0 0 24px; }
+    h2 { font-size: 18px; margin: 32px 0 8px; }
+    .app { display: flex; align-items: center; gap: 16px; border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+    .app svg { flex: none; border-radius: 14px; box-shadow: inset 0 0 0 1px var(--line); }
+    .app p { margin: 0; }
+    .sub { color: var(--sub); font-size: 14px; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Rabbit Apps</h1>
+
+  <h2>앱</h2>
+  <div class="app">
+    <svg width="56" height="56" viewBox="0 0 100 100" role="img" aria-label="혈당수첩 아이콘">
+      <rect width="100" height="100" fill="#ffffff"/>
+      <path d="M50 18 C50 18 28 45 28 60 A22 22 0 0 0 72 60 C72 45 50 18 50 18 Z" fill="#E5484D"/>
+      <polyline points="36,63 44,56 50,64 57,50 64,57" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    </svg>
+    <div>
+      <p><strong>혈당수첩</strong></p>
+      <p class="sub">광고 없이 간단한 혈당·당화혈색소 기록</p>
+      <p class="sub"><a href="glucose-diary/">지원</a> · <a href="glucose-diary/privacy.html">개인정보처리방침</a></p>
+    </div>
+  </div>
+
+  <h2>문의</h2>
+  <p><a href="mailto:rabbit.apps.support@gmail.com">rabbit.apps.support@gmail.com</a></p>
+</main>
+</body>
+</html>

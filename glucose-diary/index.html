@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>혈당수첩 지원</title>
+  <style>
+    :root { color-scheme: light dark; --text: #111113; --sub: #60646c; --line: #e0e1e6; --bg: #ffffff; --accent: #e5484d; }
+    @media (prefers-color-scheme: dark) { :root { --text: #f0f0f3; --sub: #b0b4ba; --line: #2e3135; --bg: #111113; } }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.7 -apple-system, system-ui, "Apple SD Gothic Neo", sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+    header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+    header svg { flex: none; border-radius: 16px; box-shadow: inset 0 0 0 1px var(--line); }
+    h1 { font-size: 26px; line-height: 1.3; margin: 0; }
+    .tagline { color: var(--sub); margin: 0; }
+    h2 { font-size: 18px; margin: 32px 0 8px; }
+    h3 { font-size: 16px; margin: 20px 0 4px; }
+    p { margin: 0 0 8px; }
+    .box { border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+    a { color: var(--accent); }
+    footer { margin-top: 40px; color: var(--sub); font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <svg width="64" height="64" viewBox="0 0 100 100" role="img" aria-label="혈당수첩 아이콘">
+      <rect width="100" height="100" fill="#ffffff"/>
+      <path d="M50 18 C50 18 28 45 28 60 A22 22 0 0 0 72 60 C72 45 50 18 50 18 Z" fill="#E5484D"/>
+      <polyline points="36,63 44,56 50,64 57,50 64,57" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    </svg>
+    <div>
+      <h1>혈당수첩</h1>
+      <p class="tagline">광고 없이 간단한 혈당·당화혈색소 기록</p>
+    </div>
+  </header>
+
+  <div class="box">
+    <p>사용하다가 궁금한 점이나 불편한 점이 있으면 이메일로 알려 주세요.</p>
+    <p>이메일: <a href="mailto:rabbit.apps.support@gmail.com">rabbit.apps.support@gmail.com</a></p>
+  </div>
+
+  <h2>자주 묻는 질문</h2>
+
+  <h3>기록은 어디에 저장되나요?</h3>
+  <p>모든 기록은 내 아이폰 안에만 저장돼요. 서버로 보내지 않고, 회원가입도 없어요.</p>
+
+  <h3>폰을 바꾸면 기록이 옮겨지나요?</h3>
+  <p>기록 탭의 "백업·내보내기"에서 "백업 파일 저장"을 누르고, 공유 창에서 "파일에 저장"을 골라 iCloud Drive에 저장해 두세요. 새 아이폰에 혈당수첩을 설치한 뒤 "백업 불러오기"로 그 파일을 고르면 기록이 돌아와요. iCloud 백업으로 아이폰을 통째로 복원해도 앱 데이터가 함께 옮겨질 수 있어요.</p>
+
+  <h3>백업을 두 번 불러오면 기록이 두 배가 되나요?</h3>
+  <p>아니요. 이미 있는 기록은 건너뛰고, 지금 있는 기록은 지우지 않아요.</p>
+
+  <h3>앱을 지우면 어떻게 되나요?</h3>
+  <p>앱을 삭제하면 기기에 저장된 기록도 함께 지워져요. 지우기 전에 백업 파일을 저장해 두세요.</p>
+
+  <h3>기록 목록의 "낮음"·"높음"은 어떤 기준인가요?</h3>
+  <p>70 mg/dL 미만은 낮음, 공복·식전은 130 초과, 식후·취침 전·기타는 180 초과일 때 높음으로 표시해요. 당뇨병학회들이 널리 쓰는 일반 목표라서, 병원에서 받은 개인 목표와는 다를 수 있어요.</p>
+
+  <h3>기록표 이미지를 저장하려는데 사진 권한을 물어봐요.</h3>
+  <p>기록표를 여러 장으로 나눠 사진 앱에 한 번에 저장할 때만 "사진 추가" 권한을 사용해요. 사진을 읽거나 다른 곳으로 보내지 않아요.</p>
+
+  <h3>예상 당화혈색소는 어떻게 계산하나요?</h3>
+  <p>최근 90일 혈당 기록의 평균으로 ADAG 연구의 공식 (평균 혈당 + 46.7) ÷ 28.7을 써서 계산해요 (Nathan DM 외, Diabetes Care 2008;31(8):1473–1478). 손가락 채혈 기록은 측정 시점이 한쪽에 몰리면 실제 검사값과 차이가 날 수 있어요. 참고용 값이며 진단이나 치료를 대신하지 않으니, 정확한 값은 병원 검사로 확인해 주세요.</p>
+
+  <footer><a href="privacy.html">개인정보처리방침</a></footer>
+</main>
+</body>
+</html>
